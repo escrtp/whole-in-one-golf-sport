@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+/* هاد عشان نستورد خط Roboto من جوجل فونتس */
+
+body {
+    margin: 0; /* هاد عشان نزيل الهوامش الافتراضية للصفحة */
+    padding: 0; /* هاد عشان نزيل البادينج الافتراضي للصفحة */
+    background-color: #ffffff; /* لون خلفية الصفحة أبيض */
+}
+
+.nav-container {
+    background-color: #002147; /* لون خلفية الناف بار أزرق غامق */
+    display: flex; /* هاد عشان نستخدم Flexbox عشان نرتب العناصر */
+    justify-content: space-between; /* هاد عشان نوزع العناصر بين بعضها */
+    align-items: center; /* هاد عشان نرتب العناصر عموديًا في الوسط */
+    padding: 10px 20px; /* هاد عشان نضيف بادينج حول الناف بار */
+    position: relative; /* هاد عشان نحدد أن العنصر بيكون relative */
+    height: 50px; /* ارتفاع الناف بار */
+}
+
+.logo {
+    width: 50px; /* عرض اللوجو */
+    height: auto; /* ارتفاع اللوجو يتناسب مع العرض */
+    position: absolute; /* هاد عشان نحدد أن اللوجو بيكون absolute */
+    left: 20px; /* هاد عشان نحدد المسافة من اليسار */
+    top: 50%; /* هاد عشان نحدد أن اللوجو بيكون في منتصف الناف بار عموديًا */
+    transform: translateY(-50%); /* هاد عشان نركز اللوجو في الوسط */
+}
+
+nav {
+    width: 100%; /* هاد عشان نحدد أن القائمة بتكون بعرض كامل */
+    display: flex; /* هاد عشان نستخدم Flexbox عشان نرتب العناصر */
+    justify-content: center; /* هاد عشان نرتب العناصر في الوسط */
+}
+
+nav ul {
+    list-style: none; /* هاد عشان نزيل النقاط من القائمة */
+    display: flex; /* هاد عشان نستخدم Flexbox عشان نرتب العناصر */
+    gap: 15px; /* هاد عشان نحدد المسافة بين العناصر */
+    padding: 0; /* هاد عشان نزيل البادينج الافتراضي */
+    margin: 0; /* هاد عشان نزيل المارجن الافتراضي */
+}
+
+nav ul li {
+    display: inline; /* هاد عشان نجعل العناصر تظهر في سطر واحد */
+}
+
+nav ul li a {
+    color: white; /* لون النص أبيض */
+    text-decoration: none; /* هاد عشان نزيل الخط من تحت الروابط */
+    font-size: 18px; /* حجم الخط */
+    padding: 10px; /* هاد عشان نضيف بادينج حول الروابط */
+}
+
+nav ul li a:hover {
+    color: #72b6ff; /* لون النص يتغير إلى أزرق فاتح عند التحويم */
+    transition: color 0.3s ease; /* تأثير انتقال سلس للون النص */
+}
+
+/* محتوى العروض */
+.packages-page {
+    text-align: center; /* هاد عشان نرتب النص في الوسط */
+    padding: 20px; /* هاد عشان نضيف بادينج حول المحتوى */
+}
+
+.package-title {
+    background-color: #002147; /* لون خلفية العنوان أزرق غامق */
+    color: white; /* لون النص أبيض */
+    text-align: center; /* هاد عشان نرتب النص في الوسط */
+    font-size: 24px; /* حجم الخط */
+    padding: 15px; /* هاد عشان نضيف بادينج حول العنوان */
+    margin: 40px 0 20px; /* هاد عشان نحدد المارجن حول العنوان */
+    border-radius: 15px; /* هاد عشان نجعل الزوايا مدورة */
+    width: 98%; /* هاد عشان نحدد عرض العنوان */
+}
+
+/* تصميم الحزمة */
+.package-box {
+    background-color: #d3d3d3; /* لون خلفية الحزمة رمادي فاتح */
+    padding: 20px; /* هاد عشان نضيف بادينج حول الحزمة */
+    border-radius: 10px; /* هاد عشان نجعل الزوايا مدورة */
+    display: flex; /* هاد عشان نستخدم Flexbox عشان نرتب العناصر */
+    align-items: center; /* هاد عشان نرتب العناصر عموديًا في الوسط */
+    justify-content: start; /* هاد عشان نرتب العناصر من البداية */
+    gap: 20px; /* هاد عشان نحدد المسافة بين العناصر */
+    max-width: 80%; /* هاد عشان نحدد أقصى عرض للحزمة */
+    margin: auto; /* هاد عشان نركز الحزمة في الوسط */
+    transition: transform 0.3s ease-in-out; /* هاد عشان نضيف تأثير تحويل سلس */
+    direction: rtl; /* هاد عشان نحدد اتجاه النص من اليمين لليسار */
+}
+
+.package-box:hover {
+    transform: scale(1.05); /* هاد عشان نضيف تأثير تكبير عند التحويم */
+}
+
+.package-box img {
+    width: 200px; /* هاد عشان نحدد عرض الصورة */
+    height: auto; /* هاد عشان نجعل ارتفاع الصورة يتناسب مع العرض */
+    border-radius: 5px; /* هاد عشان نجعل زوايا الصورة مدورة */
+}
+
+.package-details {
+    text-align: right; /* هاد عشان نرتب النص على اليمين */
+    font-size: 18px; /* حجم الخط */
+    color: #333; /* لون النص رمادي غامق */
+}
+
+.package-details p {
+    margin: 5px 0; /* هاد عشان نحدد المارجن بين الفقرات */
+}

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+/* هاد عشان نستورد خط Roboto من جوجل فونتس */
+
+body {
+    margin: 0; /* هاد عشان نزيل الهوامش الافتراضية للصفحة */
+    padding: 0; /* هاد عشان نزيل البادينج الافتراضي للصفحة */
+    background-color: #ffffff; /* لون خلفية الصفحة أبيض */
+}
+
+.nav-container {
+    background-color: #002147; /* لون خلفية الناف بار أزرق غامق */
+    display: flex; /* هاد عشان نستخدم Flexbox عشان نرتب العناصر */
+    justify-content: space-between; /* هاد عشان نوزع العناصر بين بعضها */
+    align-items: center; /* هاد عشان نرتب العناصر عموديًا في الوسط */
+    padding: 10px 20px; /* هاد عشان نضيف بادينج حول الناف بار */
+    position: relative; /* هاد عشان نحدد أن العنصر بيكون relative */
+    height: 50px; /* ارتفاع الناف بار */
+}
+
+.logo {
+    width: 50px; /* عرض اللوجو */
+    height: auto; /* ارتفاع اللوجو يتناسب مع العرض */
+    position: absolute; /* هاد عشان نحدد أن اللوجو بيكون absolute */
+    left: 20px; /* هاد عشان نحدد المسافة من اليسار */
+    top: 50%; /* هاد عشان نحدد أن اللوجو بيكون في منتصف الناف بار عموديًا */
+    transform: translateY(-50%); /* هاد عشان نركز اللوجو في الوسط */
+}
+
+nav {
+    width: 100%; /* هاد عشان نحدد أن القائمة بتكون بعرض كامل */
+    display: flex; /* هاد عشان نستخدم Flexbox عشان نرتب العناصر */
+    justify-content: center; /* هاد عشان نرتب العناصر في الوسط */
+}
+
+nav ul {
+    list-style: none; /* هاد عشان نزيل النقاط من القائمة */
+    display: flex; /* هاد عشان نستخدم Flexbox عشان نرتب العناصر */
+    gap: 15px; /* هاد عشان نحدد المسافة بين العناصر */
+    padding: 0; /* هاد عشان نزيل البادينج الافتراضي */
+    margin: 0; /* هاد عشان نزيل المارجن الافتراضي */
+}
+
+nav ul li {
+    display: inline; /* هاد عشان نجعل العناصر تظهر في سطر واحد */
+}
+
+nav ul li a {
+    color: white; /* لون النص أبيض */
+    text-decoration: none; /* هاد عشان نزيل الخط من تحت الروابط */
+    font-size: 18px; /* حجم الخط */
+    padding: 10px; /* هاد عشان نضيف بادينج حول الروابط */
+}
+
+nav ul li a:hover {
+    color: #72b6ff; /* لون النص يتغير إلى أزرق فاتح عند التحويم */
+    transition: color 0.3s ease; /* تأثير انتقال سلس للون النص */
+}
+
+/* ✅ إعدادات إمكانية الوصول */
+.accessibility-container {
+    background-color: white; /* لون خلفية الحاوية أبيض */
+    padding: 30px; /* هاد عشان نضيف بادينج حول الحاوية */
+    border-radius: 10px; /* هاد عشان نجعل الزوايا مدورة */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* هاد عشان نضيف ظل خفيف */
+    width: 90%; /* هاد عشان نحدد عرض الحاوية */
+    max-width: 400px; /* هاد عشان نحدد أقصى عرض للحاوية */
+    text-align: center; /* هاد عشان نرتب النص في الوسط */
+    margin: 100px auto; /* هاد عشان نركز الحاوية في الوسط */
+}
+
+.accessibility-container h2 {
+    color: #002147; /* لون النص أزرق غامق */
+    margin-bottom: 20px; /* هاد عشان نحدد المارجن من تحت */
+}
+
+.settings button {
+    width: 100%; /* هاد عشان نجعل الأزرار بتكون بعرض كامل */
+    padding: 10px; /* هاد عشان نضيف بادينج حول الأزرار */
+    margin: 10px 5px; /* هاد عشان نحدد المارجن بين الأزرار */
+    border: none; /* هاد عشان نزيل الحدود */
+    font-size: 18px; /* حجم الخط */
+    cursor: pointer; /* هاد عشان نغير شكل المؤشر عند التحويم */
+    border-radius: 5px; /* هاد عشان نجعل الزوايا مدورة */
+    transition: background-color 0.3s; /* هاد عشان نضيف تأثير انتقال سلس للون الخلفية */
+}
+
+#increaseTextSize {
+    background-color: #004080; /* لون خلفية الزر أزرق غامق */
+    color: white; /* لون النص أبيض */
+}
+
+#increaseTextSize:hover {
+    background-color: #002147; /* لون خلفية الزر يتغير عند التحويم */
+}
+
+#toggleDarkMode {
+    background-color: #333; /* لون خلفية الزر رمادي غامق */
+    color: white; /* لون النص أبيض */
+}
+
+#toggleDarkMode:hover {
+    background-color: #555; /* لون خلفية الزر يتغير عند التحويم */
+}
+
+#changeLanguage {
+    background-color: #007BFF; /* لون خلفية الزر أزرق */
+    color: white; /* لون النص أبيض */
+}
+
+#changeLanguage:hover {
+    background-color: #0056b3; /* لون خلفية الزر يتغير عند التحويم */
+}
+
+/* ✅ إعدادات إمكانية الوصول */
+.accessibility-container {
+    background-color: white; /* لون خلفية الحاوية أبيض */
+    padding: 30px; /* هاد عشان نضيف بادينج حول الحاوية */
+    border-radius: 10px; /* هاد عشان نجعل الزوايا مدورة */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* هاد عشان نضيف ظل خفيف */
+    width: 90%; /* هاد عشان نحدد عرض الحاوية */
+    max-width: 400px; /* هاد عشان نحدد أقصى عرض للحاوية */
+    text-align: center; /* هاد عشان نرتب النص في الوسط */
+    margin: 100px auto; /* هاد عشان نركز الحاوية في الوسط */
+}
+
+.accessibility-container h2 {
+    color: #002147; /* لون النص أزرق غامق */
+    margin-bottom: 20px; /* هاد عشان نحدد المارجن من تحت */
+}
+
+.settings button {
+    width: 100%; /* هاد عشان نجعل الأزرار بتكون بعرض كامل */
+    padding: 10px; /* هاد عشان نضيف بادينج حول الأزرار */
+    margin: 10px 5px; /* هاد عشان نحدد المارجن بين الأزرار */
+    border: none; /* هاد عشان نزيل الحدود */
+    font-size: 18px; /* حجم الخط */
+    cursor: pointer; /* هاد عشان نغير شكل المؤشر عند التحويم */
+    border-radius: 5px; /* هاد عشان نجعل الزوايا مدورة */
+    transition: background-color 0.3s; /* هاد عشان نضيف تأثير انتقال سلس للون الخلفية */
+}
+
+#increaseTextSize {
+    background-color: #004080; /* لون خلفية الزر أزرق غامق */
+    color: white; /* لون النص أبيض */
+}
+
+#increaseTextSize:hover {
+    background-color: #002147; /* لون خلفية الزر يتغير عند التحويم */
+}
+
+#toggleDarkMode {
+    background-color: #333; /* لون خلفية الزر رمادي غامق */
+    color: white; /* لون النص أبيض */
+}
+
+#toggleDarkMode:hover {
+    background-color: #555; /* لون خلفية الزر يتغير عند التحويم */
+}
+
+.dark-mode {
+    background-color: #121212; /* لون خلفية الصفحة في الوضع الليلي */
+    color: white; /* لون النص أبيض */
+}
+
+.dark-mode .accessibility-container {
+    background-color: #222; /* لون خلفية الحاوية في الوضع الليلي */
+    color: white; /* لون النص أبيض */
+}
+
+.dark-mode button {
+    background-color: #444; /* لون خلفية الأزرار في الوضع الليلي */
+    color: white; /* لون النص أبيض */
+}
+
+.dark-mode button:hover {
+    background-color: #666; /* لون خلفية الأزرار يتغير عند التحويم في الوضع الليلي */
+}

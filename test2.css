@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+/* هاد عشان نستورد خط Roboto من جوجل فونتس */
+
+body {
+    margin: 0; /* هاد عشان نزيل الهوامش الافتراضية للصفحة */
+    padding: 0; /* هاد عشان نزيل البادينج الافتراضي للصفحة */
+    background-color: #ffffff; /* لون خلفية الصفحة أبيض */
+}
+
+.nav-container {
+    background-color: #002147; /* لون خلفية الناف بار أزرق غامق */
+    display: flex; /* هاد عشان نستخدم Flexbox عشان نرتب العناصر */
+    justify-content: space-between; /* هاد عشان نوزع العناصر بين بعضها */
+    align-items: center; /* هاد عشان نرتب العناصر عموديًا في الوسط */
+    padding: 10px 20px; /* هاد عشان نضيف بادينج حول الناف بار */
+    position: relative; /* هاد عشان نحدد أن العنصر بيكون relative */
+    height: 50px; /* ارتفاع الناف بار */
+}
+
+.logo {
+    width: 50px; /* عرض اللوجو */
+    height: auto; /* ارتفاع اللوجو يتناسب مع العرض */
+    position: absolute; /* هاد عشان نحدد أن اللوجو بيكون absolute */
+    left: 20px; /* هاد عشان نحدد المسافة من اليسار */
+    top: 50%; /* هاد عشان نحدد أن اللوجو بيكون في منتصف الناف بار عموديًا */
+    transform: translateY(-50%); /* هاد عشان نركز اللوجو في الوسط */
+}
+
+nav {
+    width: 100%; /* هاد عشان نحدد أن القائمة بتكون بعرض كامل */
+    display: flex; /* هاد عشان نستخدم Flexbox عشان نرتب العناصر */
+    justify-content: center; /* هاد عشان نرتب العناصر في الوسط */
+}
+
+nav ul {
+    list-style: none; /* هاد عشان نزيل النقاط من القائمة */
+    display: flex; /* هاد عشان نستخدم Flexbox عشان نرتب العناصر */
+    gap: 15px; /* هاد عشان نحدد المسافة بين العناصر */
+    padding: 0; /* هاد عشان نزيل البادينج الافتراضي */
+    margin: 0; /* هاد عشان نزيل المارجن الافتراضي */
+}
+
+nav ul li {
+    display: inline; /* هاد عشان نجعل العناصر تظهر في سطر واحد */
+}
+
+nav ul li a {
+    color: white; /* لون النص أبيض */
+    text-decoration: none; /* هاد عشان نزيل الخط من تحت الروابط */
+    font-size: 18px; /* حجم الخط */
+    padding: 10px; /* هاد عشان نضيف بادينج حول الروابط */
+}
+
+nav ul li a:hover {
+    color: #72b6ff; /* لون النص يتغير إلى أزرق فاتح عند التحويم */
+    transition: color 0.3s ease; /* تأثير انتقال سلس للون النص */
+}
+
+.title-box {
+    background-color: #002147; /* لون خلفية العنوان أزرق غامق */
+    color: white; /* لون النص أبيض */
+    text-align: center; /* هاد عشان نرتب النص في الوسط */
+    font-size: 24px; /* حجم الخط */
+    padding: 15px; /* هاد عشان نضيف بادينج حول العنوان */
+    margin: 40px 0 20px; /* هاد عشان نحدد المارجن حول العنوان */
+    border-radius: 15px; /* هاد عشان نجعل الزوايا مدورة */
+    width: 98%; /* هاد عشان نحدد عرض العنوان */
+}
+
+.facilities {
+    display: flex; /* هاد عشان نستخدم Flexbox عشان نرتب العناصر */
+    flex-wrap: wrap; /* هاد عشان نجعل العناصر تنتقل لسطر جديد إذا ما في مساحة */
+    justify-content: center; /* هاد عشان نرتب العناصر في الوسط */
+    gap: 30px; /* هاد عشان نحدد المسافة بين العناصر */
+    padding: px; /* هاد عشان نضيف بادينج حول العناصر */
+    max-width: 1200px; /* هاد عشان نحدد أقصى عرض للعناصر */
+    margin: auto; /* هاد عشان نركز العناصر في الوسط */
+}
+
+.facility {
+    background-color: #d3d3d3; /* لون خلفية العنصر رمادي فاتح */
+    padding: 15px; /* هاد عشان نضيف بادينج حول العنصر */
+    border-radius: 10px; /* هاد عشان نجعل الزوايا مدورة */
+    text-align: center; /* هاد عشان نرتب النص في الوسط */
+    width: 250px; /* هاد عشان نحدد عرض العنصر */
+}
+
+.price {
+    margin-top: 8px; /* هاد عشان نحدد المارجن من فوق للسعر */
+}
+
+.new-price {
+    color: red; /* لون السعر الجديد أحمر */
+    font-size: 18px; /* حجم الخط */
+    font-weight: bold; /* هاد عشان نجعل الخط عريض */
+    margin-left: 8px; /* هاد عشان نحدد المارجن من اليسار */
+}
+
+.old-price {
+    color: gray; /* لون السعر القديم رمادي */
+    font-size: 14px; /* حجم الخط */
+    text-decoration: line-through; /* هاد عشان نضع خط على السعر القديم */
+}
+
+.facility img {
+    width: 100%; /* هاد عشان نجعل الصورة بتكون بعرض كامل */
+    border-radius: 5px; /* هاد عشان نجعل زوايا الصورة مدورة */
+}
+
+.facility p {
+    color: #002147; /* لون النص أزرق غامق */
+    font-size: 16px; /* حجم الخط */
+}
+
+.store {
+    display: grid; /* هاد عشان نستخدم Grid عشان نرتب العناصر */
+    grid-template-columns: repeat(4, 1fr); /* هاد عشان نحدد عدد الأعمدة */
+}
+
+@media (max-width: 768px) { /* هاد عشان نحدد التنسيقات للشاشات الصغيرة */
+    .facilities {
+        flex-direction: column; /* هاد عشان نجعل العناصر تظهر بشكل عمودي */
+        align-items: center; /* هاد عشان نرتب العناصر في الوسط */
+    }
+    .store {
+        grid-template-columns: repeat(2, 1fr); /* هاد عشان نحدد عدد الأعمدة لشاشات الموبايل */
+    }
+}

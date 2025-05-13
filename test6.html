@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"> <!-- هاد عشان نحدد لغة الصفحة عربي واتجاه النص من اليمين لليسار -->
+<head>
+    <meta charset="UTF-8"> <!-- هاد عشان نحدد ترميز الصفحة UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- هاد عشان الصفحة تظهر صح على الموبايل -->
+    <title>العروض</title> <!-- عنوان الصفحة اللي رح يظهر في تبويب المتصفح -->
+    <link rel="stylesheet" href="css/test6.css"> <!-- ربط ملف الستايل الأول -->
+    <link rel="stylesheet" href="css/test8.css"> <!-- ربط ملف الستايل الثاني -->
+    <script defer src="js/test8.js"></script> <!-- ربط ملف الجافا سكريبت -->
+</head>
+<body>
+
+    <!-- شريط التنقل -->
+    <header>
+        <div class="nav-container"> <!-- هاد الديف عشان نحط فيه اللوجو والقائمة -->
+            <img src="images/logo.png" alt="لوجو" class="logo"> <!-- هون بنحط اللوجو -->
+            <nav>
+                <ul> <!-- هاد القائمة اللي رح تحتوي على الروابط -->
+                    <li><a href="index.html">الرئيسية</a></li> <!-- رابط الصفحة الرئيسية -->
+                    <li><a href="test2.html">المرافق والخدمات</a></li> <!-- رابط صفحة المرافق والخدمات -->
+                    <li><a href="test3.html">من نحن</a></li> <!-- رابط صفحة من نحن -->
+                    <li><a href="test4.html">العروض</a></li> <!-- رابط صفحة العروض -->
+                    <li><a href="test5.html">النشاطات</a></li> <!-- رابط صفحة النشاطات -->
+                    <li><a href="test6.html">اتصل بنا</a></li> <!-- رابط صفحة اتصل بنا -->
+                    <li><a href="test7.html">تسجيل دخول</a></li> <!-- رابط صفحة تسجيل دخول -->
+                    <li><a href="test8.html">امكانية الوصول</a></li> <!-- رابط صفحة امكانية الوصول -->
+                </ul>
+            </nav>
+        </div>
+        <!-- قائمة الهامبرغر -->
+        <div class="hamburger-menu" onclick="toggleMenu()"> <!-- هاد الزر اللي رح يفتح قائمة الهامبرغر -->
+            <div></div> <!-- هاد الخط الأول -->
+            <div></div> <!-- هاد الخط الثاني -->
+            <div></div> <!-- هاد الخط الثالث -->
+        </div>
+    </header>
+
+    <!-- محتوى الصفحة -->
+    <body>
+        <div class="contact-section"> <!-- هاد الديف عشان نحط فيه قسم الاتصال -->
+          <h2>اتصل بنا</h2> <!-- عنوان القسم -->
+          <div class="contact-title"> <!-- هاد الديف عشان نحط فيه معلومات الاتصال -->
+            <p><i class="fas fa-phone"></i> +123 7XXX XXXX</p> <!-- رقم الهاتف -->
+            <p><i class="fas fa-envelope"></i> info@holeinone.com</p> <!-- البريد الإلكتروني -->
+            <p><i class="fas fa-map-marker-alt"></i> البرتغال</p> <!-- العنوان -->
+          </div>
+          <form class="contact-form"> <!-- هاد الفورم عشان نحط فيه حقول الاتصال -->
+            <input type="text" placeholder="الاسم الكامل" required> <!-- حقل الاسم -->
+            <input type="email" placeholder="البريد الإلكتروني" required> <!-- حقل البريد الإلكتروني -->
+            <textarea rows="5" placeholder="اكتب رسالتك هنا" required></textarea> <!-- حقل الرسالة -->
+            <button type="submit">إرسال</button> <!-- زر الإرسال -->
+          </form>
+        </div>
+    </body>
+
+    <script>
+        // وظيفة لفتح وغلق قائمة الهامبرغر
+        function toggleMenu() {
+            const menu = document.getElementById('menu'); // هاد عشان نحدد القائمة اللي رح نفتحها
+            menu.classList.toggle('show'); // هاد عشان نفتح القائمة او نغلقها
+        }
+    </script>
+
+</body>
+</html>

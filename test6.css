@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+/* هاد عشان نستورد خط Roboto من جوجل فونتس */
+
+body {
+    margin: 0; /* هاد عشان نزيل الهوامش الافتراضية للصفحة */
+    padding: 0; /* هاد عشان نزيل البادينج الافتراضي للصفحة */
+    background-color: #ffffff; /* لون خلفية الصفحة أبيض */
+}
+
+.nav-container {
+    background-color: #002147; /* لون خلفية الناف بار أزرق غامق */
+    display: flex; /* هاد عشان نستخدم Flexbox عشان نرتب العناصر */
+    justify-content: space-between; /* هاد عشان نوزع العناصر بين بعضها */
+    align-items: center; /* هاد عشان نرتب العناصر عموديًا في الوسط */
+    padding: 10px 20px; /* هاد عشان نضيف بادينج حول الناف بار */
+    position: relative; /* هاد عشان نحدد أن العنصر بيكون relative */
+    height: 50px; /* ارتفاع الناف بار */
+}
+
+.logo {
+    width: 50px; /* عرض اللوجو */
+    height: auto; /* ارتفاع اللوجو يتناسب مع العرض */
+    position: absolute; /* هاد عشان نحدد أن اللوجو بيكون absolute */
+    left: 20px; /* هاد عشان نحدد المسافة من اليسار */
+    top: 50%; /* هاد عشان نحدد أن اللوجو بيكون في منتصف الناف بار عموديًا */
+    transform: translateY(-50%); /* هاد عشان نركز اللوجو في الوسط */
+}
+
+nav {
+    width: 100%; /* هاد عشان نحدد أن القائمة بتكون بعرض كامل */
+    display: flex; /* هاد عشان نستخدم Flexbox عشان نرتب العناصر */
+    justify-content: center; /* هاد عشان نرتب العناصر في الوسط */
+}
+
+nav ul {
+    list-style: none; /* هاد عشان نزيل النقاط من القائمة */
+    display: flex; /* هاد عشان نستخدم Flexbox عشان نرتب العناصر */
+    gap: 15px; /* هاد عشان نحدد المسافة بين العناصر */
+    padding: 0; /* هاد عشان نزيل البادينج الافتراضي */
+    margin: 0; /* هاد عشان نزيل المارجن الافتراضي */
+}
+
+nav ul li {
+    display: inline; /* هاد عشان نجعل العناصر تظهر في سطر واحد */
+}
+
+nav ul li a {
+    color: white; /* لون النص أبيض */
+    text-decoration: none; /* هاد عشان نزيل الخط من تحت الروابط */
+    font-size: 18px; /* حجم الخط */
+    padding: 10px; /* هاد عشان نضيف بادينج حول الروابط */
+}
+
+nav ul li a:hover {
+    color: #72b6ff; /* لون النص يتغير إلى أزرق فاتح عند التحويم */
+    transition: color 0.3s ease; /* تأثير انتقال سلس للون النص */
+}
+
+/* ✅ تنسيق استمارة الاتصال بشكل متناسق */
+.contact-form {
+    display: flex; /* هاد عشان نستخدم Flexbox عشان نرتب العناصر */
+    flex-direction: column; /* هاد عشان نجعل العناصر تظهر بشكل عمودي */
+    align-items: center; /* هاد عشان نرتب العناصر في الوسط */
+    gap: 15px; /* هاد عشان نحدد المسافة بين العناصر */
+}
+
+/* ✅ تنسيق العنوان "اتصل بنا" */
+.contact-title {
+    text-align: center; /* هاد عشان نرتب النص في الوسط */
+    font-size: 28px; /* حجم الخط */
+    color: #002147; /* لون النص أزرق غامق */
+    margin-bottom: 20px; /* هاد عشان نحدد المارجن من تحت */
+    font-weight: bold; /* هاد عشان نجعل الخط عريض */
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: calc(100% - 40px); /* هاد عشان نحدد عرض الحقول */
+    max-width: 500px; /* هاد عشان نحدد أقصى عرض للحقول */
+    padding: 12px; /* هاد عشان نضيف بادينج حول الحقول */
+    border: 1px solid #ccc; /* هاد عشان نضيف حدود للحقول */
+    border-radius: 5px; /* هاد عشان نجعل الزوايا مدورة */
+    font-size: 16px; /* حجم الخط */
+    background: #f5f5f5; /* لون خلفية الحقول رمادي فاتح */
+    text-align: right; /* هاد عشان نرتب النص على اليمين */
+}
+
+.contact-form textarea {
+    resize: none; /* هاد عشان نمنع تغيير حجم حقل الرسالة */
+    height: 120px; /* هاد عشان نحدد ارتفاع حقل الرسالة */
+}
+
+.contact-section {
+    text-align: center; /* هاد عشان نرتب النص في الوسط */
+}
+
+/* ✅ زر الإرسال */
+.contact-form button {
+    width: calc(100% - 40px); /* هاد عشان نحدد عرض الزر */
+    max-width: 500px; /* هاد عشان نحدد أقصى عرض للزر */
+    padding: 12px; /* هاد عشان نضيف بادينج حول الزر */
+    background-color: white; /* لون خلفية الزر أبيض */
+    color: #002147; /* لون النص أزرق غامق */
+    border: none; /* هاد عشان نزيل الحدود */
+    font-size: 18px; /* حجم الخط */
+    font-weight: bold; /* هاد عشان نجعل الخط عريض */
+    cursor: pointer; /* هاد عشان نغير شكل المؤشر عند التحويم */
+    border-radius: 5px; /* هاد عشان نجعل الزوايا مدورة */
+    transition: background 0.3s ease-in-out; /* هاد عشان نضيف تأثير انتقال سلس */
+}
+
+.contact-form button:hover {
+    background-color: #ddd; /* لون خلفية الزر يتغير عند التحويم */
+}

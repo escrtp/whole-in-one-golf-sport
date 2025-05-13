@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8"> <!-- هنا بنحدد نوع الترميز اللي رح نستخدمه عشان اللغة العربية -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- هاد عشان الصفحة تظهر صح على الموبايل -->
+    <title>المرافق والخدمات</title> <!-- عنوان الصفحة اللي رح يظهر في تبويب المتصفح -->
+    <link rel="stylesheet" href="css/test2.css"> <!-- ربط ملف الستايل الأول -->
+    <link rel="stylesheet" href="css/test8.css"> <!-- ربط ملف الستايل الثاني -->
+</head>
+<body>
+
+    <header>
+        <div class="nav-container"> <!-- هاد الديف عشان نحط فيه اللوجو والقائمة -->
+            <img src="images/logo.png" alt="لوجو" class="logo"> <!-- هون بنحط اللوجو -->
+            <nav>
+                <ul> <!-- هاد القائمة اللي رح تحتوي على الروابط -->
+                    <li><a href="index.html">الرئيسية</a></li> <!-- رابط الصفحة الرئيسية -->
+                    <li><a href="test2.html">المرافق والخدمات</a></li> <!-- رابط صفحة المرافق والخدمات -->
+                    <li><a href="test3.html">من نحن</a></li> <!-- رابط صفحة من نحن -->
+                    <li><a href="test4.html">العروض</a></li> <!-- رابط صفحة العروض -->
+                    <li><a href="test5.html">النشاطات</a></li> <!-- رابط صفحة النشاطات -->
+                    <li><a href="test6.html">اتصل بنا</a></li> <!-- رابط صفحة اتصل بنا -->
+                    <li><a href="test7.html">تسجيل دخول</a></li> <!-- رابط صفحة تسجيل دخول -->
+                    <li><a href="test8.html">امكانية الوصول</a></li> <!-- رابط صفحة امكانية الوصول -->
+                </ul>
+            </nav>
+        </div>
+
+        <!-- قائمة الهامبرغر -->
+        <div class="hamburger-menu" onclick="toggleMenu()"> <!-- هاد الزر اللي رح يفتح قائمة الهامبرغر -->
+            <div></div> <!-- هاد الخط الأول -->
+            <div></div> <!-- هاد الخط الثاني -->
+            <div></div> <!-- هاد الخط الثالث -->
+        </div>
+    </header>
+
+    <main>
+        <section class="facility-section"> <!-- هاد السكشن عشان نعرض فيه ملاعب الجولف -->
+            <div class="title-box">ملاعب الجولف</div> <!-- عنوان السكشن -->
+            <div class="facilities"> <!-- هاد الديف عشان نحط فيه الصور والوصف -->
+                <div class="facility"><img src="images/golf1.webp" alt="ملعب 1"><p>ملعب الجولف الأول سي فيو</p></div> <!-- صورة ووصف الملعب الأول -->
+                <div class="facility"><img src="images/golf2.jpg" alt="ملعب 2"><p>ملعب الجولف الثاني</p></div> <!-- صورة ووصف الملعب الثاني -->
+                <div class="facility"><img src="images/golf3.webp" alt="ملعب 3"><p>ملعب الجولف الثالث</p></div> <!-- صورة ووصف الملعب الثالث -->
+            </div>
+        </section>
+
+        <section class="facility-section"> <!-- هاد السكشن عشان نعرض فيه النوادي -->
+            <div class="title-box">الناديان</div> <!-- عنوان السكشن -->
+            <div class="facilities"> <!-- هاد الديف عشان نحط فيه الصور والوصف -->
+                <div class="facility"><img src="images/bar1.jpg" alt="نادي 1"><p>افضل نوادي المنتجع</p></div> <!-- صورة ووصف النادي الأول -->
+                <div class="facility"><img src="images/bar2.webp" alt="نادي 2"><p>نادي داخلي مخصص للجولف</p></div> <!-- صورة ووصف النادي الثاني -->
+            </div>
+        </section>
+
+        <section class="facility-section"> <!-- هاد السكشن عشان نعرض فيه الفنادق -->
+            <div class="title-box">الفنادق</div> <!-- عنوان السكشن -->
+            <div class="facilities"> <!-- هاد الديف عشان نحط فيه الصور والوصف -->
+                <div class="facility"><img src="images/bedroom.jpeg" alt="فندق 1"><p>غرفة نوم</p></div> <!-- صورة ووصف غرفة النوم -->
+                <div class="facility"><img src="images/bathroom.jpg" alt="فندق 2"><p>حمام</p></div> <!-- صورة ووصف الحمام -->
+                <div class="facility"><img src="images/balcony.jpg" alt="فندق 3"><p>بلكونه</p></div> <!-- صورة ووصف البلكونة -->
+            </div>
+        </section>
+
+        <section class="facility-section"> <!-- هاد السكشن عشان نعرض فيه المطاعم والمقاهي -->
+            <div class="title-box">المطاعم والمقاهي</div> <!-- عنوان السكشن -->
+            <div class="facilities"> <!-- هاد الديف عشان نحط فيه الصور والوصف -->
+                <div class="facility"><img src="images/food.avif" alt="مطعم 1"><p>طعام</p></div> <!-- صورة ووصف الطعام -->
+                <div class="facility"><img src="images/drinks.webp" alt="مطعم 2"><p>مشروبات</p></div> <!-- صورة ووصف المشروبات -->
+            </div>
+        </section>
+
+        <section class="facility-section"> <!-- هاد السكشن عشان نعرض فيه متجر المحترفين -->
+            <div class="title-box">متجر المحترفين</div> <!-- عنوان السكشن -->
+            <div class="facilities store"> <!-- هاد الديف عشان نحط فيه المنتجات -->
+                <div class="facility"> <!-- هاد الديف عشان نحط فيه المنتج الأول -->
+                    <img src="images/balls.png" alt="كرات الجولف"> <!-- صورة كرات الجولف -->
+                    <p>كرات الجولف الأفضل حجمًا واحترافية</p> <!-- وصف كرات الجولف -->
+                    <div class="price"> <!-- هاد الديف عشان نحط فيه السعر -->
+                        <span class="new-price">80$</span> <!-- السعر الجديد -->
+                        <span class="old-price">100$</span> <!-- السعر القديم -->
+                    </div>
+                </div>
+                <div class="facility"> <!-- هاد الديف عشان نحط فيه المنتج الثاني -->
+                    <img src="images/shirt.png" alt="تيشيرتات"> <!-- صورة التيشيرتات -->
+                    <p>ملابس علوية مريحة اثناء اللعب</p> <!-- وصف التيشيرتات -->
+                    <div class="price"> <!-- هاد الديف عشان نحط فيه السعر -->
+                        <span class="new-price">120$</span> <!-- السعر الجديد -->
+                        <span class="old-price">150$</span> <!-- السعر القديم -->
+                    </div>
+                </div>
+                <div class="facility"> <!-- هاد الديف عشان نحط فيه المنتج الثالث -->
+                    <img src="images/shoes.png" alt="حذاء رياضي مريح"> <!-- صورة الحذاء الرياضي -->
+                    <p>افضل حذاء يمكن ارتداؤه اثناء اللعب</p> <!-- وصف الحذاء الرياضي -->
+                    <div class="price"> <!-- هاد الديف عشان نحط فيه السعر -->
+                        <span class="new-price">160$</span> <!-- السعر الجديد -->
+                        <span class="old-price">200$</span> <!-- السعر القديم -->
+                    </div>
+                </div>
+                <div class="facility"> <!-- هاد الديف عشان نحط فيه المنتج الرابع -->
+                    <img src="images/short.png" alt="شورت مريح للعب"> <!-- صورة الشورت -->
+                    <p>شورت قطني مريح لزياده الراحه  والسلاسه بالحركة</p> <!-- وصف الشورت -->
+                    <div class="price"> <!-- هاد الديف عشان نحط فيه السعر -->
+                        <span class="new-price">200$</span> <!-- السعر الجديد -->
+                        <span class="old-price">250$</span> <!-- السعر القديم -->
+                    </div>
+                </div>
+                <div class="facility"> <!-- هاد الديف عشان نحط فيه المنتج الخامس -->
+                    <img src="images/glasses.png" alt="نظارات شمسيه"> <!-- صورة النظارات الشمسية -->
+                    <p>نظارات واقيه من الشمس ومريحه للارتداء</p> <!-- وصف النظارات الشمسية -->
+                    <div class="price"> <!-- هاد الديف عشان نحط فيه السعر -->
+                        <span class="new-price">80$</span> <!-- السعر الجديد -->
+                        <span class="old-price">100$</span> <!-- السعر القديم -->
+                    </div>
+                </div>
+                <div class="facility"> <!-- هاد الديف عشان نحط فيه المنتج السادس -->
+                    <img src="images/cap.png" alt="قبعة للحماية من الشمس"> <!-- صورة القبعة -->
+                    <p>قبعة من قماش مريحه على الرأس واقيه من الشمس</p> <!-- وصف القبعة -->
+                    <div class="price"> <!-- هاد الديف عشان نحط فيه السعر -->
+                        <span class="new-price">120$</span> <!-- السعر الجديد -->
+                        <span class="old-price">150$</span> <!-- السعر القديم -->
+                    </div>
+                </div>
+                <div class="facility"> <!-- هاد الديف عشان نحط فيه المنتج السابع -->
+                    <img src="images/bag.png" alt="افضل حقيبه لحمل الامتعه"> <!-- صورة الحقيبة -->
+                    <p>افضل حقيبه من القماش لحمل يد الجولف</p> <!-- وصف الحقيبة -->
+                    <div class="price"> <!-- هاد الديف عشان نحط فيه السعر -->
+                        <span class="new-price">160$</span> <!-- السعر الجديد -->
+                        <span class="old-price">200$</span> <!-- السعر القديم -->
+                    </div>
+                </div>
+                <div class="facility"> <!-- هاد الديف عشان نحط فيه المنتج الثامن -->
+                    <img src="images/golfclub.png" alt="يد جولف قويه"> <!-- صورة يد الجولف -->
+                    <p>افضل يد للجولف مصنوعه من ما ادري ايش مريحه للاستخدام</p> <!-- وصف يد الجولف -->
+                    <div class="price"> <!-- هاد الديف عشان نحط فيه السعر -->
+                        <span class="new-price">200$</span> <!-- السعر الجديد -->
+                        <span class="old-price">250$</span> <!-- السعر القديم -->
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+    <script>
+        // وظيفة لفتح وغلق قائمة الهامبرغر
+        function toggleMenu() {
+            const menu = document.getElementById('menu'); // هاد عشان نحدد القائمة اللي رح نفتحها
+            menu.classList.toggle('show'); // هاد عشان نفتح القائمة او نغلقها
+        }
+    </script>
+
+</body>
+</html>
